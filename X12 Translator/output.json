@@ -1,0 +1,243 @@
+{
+  "interchange": {
+    "authorization_info_qualifier": "00",
+    "security_info_qualifier": "00",
+    "sender_qualifier": "ZZ",
+    "sender_id": "SUBMITTERID",
+    "receiver_qualifier": "ZZ",
+    "receiver_id": "RECEIVERID",
+    "date": "2025-06-01",
+    "time": "1253",
+    "control_version_number": "00501",
+    "control_number": "000000905",
+    "usage_indicator": "Production"
+  },
+  "functional_groups": [
+    {
+      "functional_id_code": "HC",
+      "sender_id": "SUBMITTERID",
+      "receiver_id": "RECEIVERID",
+      "date": "2025-06-01",
+      "time": "1253",
+      "control_number": "905",
+      "version_release_industry_id": "005010X222A1",
+      "transactions": [
+        {
+          "header": {
+            "transaction_set_id": "837",
+            "control_number": "0001",
+            "implementation_convention_reference": "005010X222A1",
+            "hierarchical_structure_code": "0019",
+            "transaction_set_purpose_code": "00",
+            "reference_identification": "0001",
+            "date": "2025-06-01",
+            "time": "1253",
+            "transaction_type_code": "CH",
+            "segment_count": "29",
+            "trailer_control_number": "0001"
+          },
+          "submitter": {
+            "entity_identifier_code": "41",
+            "entity_type": "Non-Person Entity",
+            "organization_name": "ACME MEDICAL BILLING SERVICE",
+            "identification": {
+              "qualifier": "46",
+              "value": "987654321"
+            },
+            "contacts": [
+              {
+                "contact_function": "IC",
+                "name": "JANE DOE",
+                "phone": "8505551234"
+              }
+            ]
+          },
+          "receiver": {
+            "entity_identifier_code": "40",
+            "entity_type": "Non-Person Entity",
+            "organization_name": "BLUE CROSS BLUE SHIELD",
+            "identification": {
+              "qualifier": "46",
+              "value": "112233445"
+            }
+          },
+          "billing_provider": {
+            "entity_identifier_code": "85",
+            "entity_type": "Non-Person Entity",
+            "organization_name": "FAMILY HEALTH CLINIC",
+            "identification": {
+              "qualifier": "XX",
+              "value": "1234567890"
+            },
+            "address": {
+              "address_line_1": "100 MAIN STREET",
+              "city": "TALLAHASSEE",
+              "state": "FL",
+              "zip": "32301"
+            },
+            "references": [
+              {
+                "qualifier": "EI",
+                "qualifier_description": "Employer's Identification Number",
+                "value": "592345678"
+              }
+            ],
+            "contact": {
+              "contact_function": "IC",
+              "name": "BILLING DEPT",
+              "phone": "8505550000"
+            }
+          },
+          "subscribers": [
+            {
+              "insured": {
+                "entity_identifier_code": "IL",
+                "entity_type": "Person",
+                "last_name": "SMITH",
+                "first_name": "JOHN",
+                "middle_name": "A",
+                "identification": {
+                  "qualifier": "MI",
+                  "value": "JS123456789"
+                },
+                "address": {
+                  "address_line_1": "42 OAK AVENUE",
+                  "city": "TALLAHASSEE",
+                  "state": "FL",
+                  "zip": "32303"
+                },
+                "date_of_birth": "1980-05-15",
+                "gender": "Male"
+              },
+              "claims": [
+                {
+                  "claim_id": "CLAIM0001",
+                  "total_charge_amount": 250,
+                  "place_of_service_code": "11",
+                  "provider_signature_indicator": "Y",
+                  "assignment_of_benefits_indicator": "A",
+                  "benefits_assignment_certification_indicator": "Y",
+                  "release_of_information_code": "Y",
+                  "diagnoses": [
+                    {
+                      "qualifier": "ABK",
+                      "qualifier_description": "Principal Diagnosis (ICD-10)",
+                      "code": "J029"
+                    },
+                    {
+                      "qualifier": "ABF",
+                      "qualifier_description": "Diagnosis (ICD-10)",
+                      "code": "R05"
+                    }
+                  ],
+                  "service_lines": [
+                    {
+                      "line_number": "1",
+                      "procedure": {
+                        "qualifier": "HC",
+                        "code": "99213",
+                        "modifiers": []
+                      },
+                      "diagnosis_pointers": [
+                        "1"
+                      ],
+                      "charge_amount": 100,
+                      "unit_of_measure": "UN",
+                      "units": 1,
+                      "dates": [
+                        {
+                          "qualifier": "472",
+                          "qualifier_description": "Service Date",
+                          "date": "2025-05-28"
+                        }
+                      ]
+                    },
+                    {
+                      "line_number": "2",
+                      "procedure": {
+                        "qualifier": "HC",
+                        "code": "87880",
+                        "modifiers": []
+                      },
+                      "diagnosis_pointers": [
+                        "2"
+                      ],
+                      "charge_amount": 150,
+                      "unit_of_measure": "UN",
+                      "units": 1,
+                      "dates": [
+                        {
+                          "qualifier": "472",
+                          "qualifier_description": "Service Date",
+                          "date": "2025-05-28"
+                        }
+                      ]
+                    }
+                  ],
+                  "referring_providers": [],
+                  "place_of_service_description": "Office",
+                  "claim_frequency_code": "1",
+                  "claim_frequency_description": "Original claim",
+                  "rendering_provider": {
+                    "entity_identifier_code": "82",
+                    "entity_type": "Person",
+                    "last_name": "WELBY",
+                    "first_name": "MARCUS",
+                    "identification": {
+                      "qualifier": "XX",
+                      "value": "1467890123"
+                    },
+                    "provider_taxonomy": {
+                      "provider_code": "PE",
+                      "qualifier": "PXC",
+                      "taxonomy_code": "207Q00000X"
+                    }
+                  },
+                  "dates": [
+                    {
+                      "qualifier": "472",
+                      "qualifier_description": "Service Date",
+                      "date": "2025-05-28"
+                    }
+                  ],
+                  "references": [
+                    {
+                      "qualifier": "D9",
+                      "qualifier_description": "Claim Number",
+                      "value": "ORIGREF001"
+                    }
+                  ]
+                }
+              ],
+              "subscriber_info": {
+                "payer_responsibility_sequence": "P",
+                "payer_responsibility_description": "Primary",
+                "individual_relationship_code": "18",
+                "individual_relationship_description": "Self",
+                "group_number": "GRP998877",
+                "insurance_type_code": null,
+                "claim_filing_indicator_code": "CI",
+                "claim_filing_indicator_description": "Commercial Insurance Co."
+              },
+              "payer": {
+                "entity_identifier_code": "PR",
+                "entity_type": "Non-Person Entity",
+                "organization_name": "BLUE CROSS BLUE SHIELD",
+                "identification": {
+                  "qualifier": "PI",
+                  "value": "112233445"
+                },
+                "address": {
+                  "address_line_1": "PO BOX 1000",
+                  "city": "JACKSONVILLE",
+                  "state": "FL",
+                  "zip": "32202"
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
